@@ -87,7 +87,7 @@
                         <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <state key="highlighted">
-                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleColor" red="0.16476398710000001" green="0.39028275010000002" blue="0.26271879669999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </state>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -176,6 +176,31 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fp8-U8-Thg">
+                    <rect key="frame" x="10" y="49" width="50" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="8ZP-PN-jLL"/>
+                        <constraint firstAttribute="width" constant="50" id="KKx-By-sc6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Reset">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="0.16476398710000001" green="0.39028275010000002" blue="0.26271879669999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickResetButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="Qv9-W2-1dX"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -210,7 +235,9 @@
                 <constraint firstItem="txR-G0-yQn" firstAttribute="height" secondItem="uNj-N0-T2e" secondAttribute="height" id="OYD-7w-ArO"/>
                 <constraint firstItem="86q-Hg-6bt" firstAttribute="leading" secondItem="yWK-dY-OuE" secondAttribute="leading" id="OyJ-9F-Esg"/>
                 <constraint firstItem="0cQ-CJ-BWi" firstAttribute="trailing" secondItem="Ysz-tS-Lwr" secondAttribute="trailing" id="Pqd-Ic-kML"/>
+                <constraint firstItem="yWK-dY-OuE" firstAttribute="leading" secondItem="fp8-U8-Thg" secondAttribute="leading" id="Pwf-Pg-2FN"/>
                 <constraint firstItem="hCo-1i-CZ5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="RPy-7W-aRc"/>
+                <constraint firstItem="yWK-dY-OuE" firstAttribute="leading" secondItem="fp8-U8-Thg" secondAttribute="leading" id="ReT-ui-s4A"/>
                 <constraint firstItem="ZAU-Ku-ZCR" firstAttribute="leading" secondItem="yWK-dY-OuE" secondAttribute="leading" id="TiR-Wt-FX3"/>
                 <constraint firstItem="0cQ-CJ-BWi" firstAttribute="height" secondItem="uNj-N0-T2e" secondAttribute="height" id="UT0-mH-GOh"/>
                 <constraint firstItem="yWK-dY-OuE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="Vkb-FC-gAB"/>
@@ -221,6 +248,7 @@
                 <constraint firstItem="8PW-Vl-UdZ" firstAttribute="width" secondItem="yWK-dY-OuE" secondAttribute="width" id="Z7A-cY-akL"/>
                 <constraint firstItem="Cun-Zd-qeh" firstAttribute="leading" secondItem="txR-G0-yQn" secondAttribute="trailing" constant="3" id="ZAn-ZA-Zrx"/>
                 <constraint firstItem="RIL-UG-SxZ" firstAttribute="top" secondItem="Cun-Zd-qeh" secondAttribute="bottom" constant="20" id="a92-39-0i3"/>
+                <constraint firstItem="hCo-1i-CZ5" firstAttribute="centerY" secondItem="fp8-U8-Thg" secondAttribute="centerY" id="aGx-lr-POI"/>
                 <constraint firstItem="txR-G0-yQn" firstAttribute="centerY" secondItem="86q-Hg-6bt" secondAttribute="centerY" id="aRz-dr-QNJ"/>
                 <constraint firstItem="bHd-2D-zeg" firstAttribute="width" secondItem="yWK-dY-OuE" secondAttribute="width" id="bCf-0g-qGg"/>
                 <constraint firstItem="Cun-Zd-qeh" firstAttribute="top" secondItem="0cQ-CJ-BWi" secondAttribute="bottom" constant="20" id="cGH-Nh-6sp"/>
@@ -229,6 +257,7 @@
                 <constraint firstItem="gkk-Uf-sqf" firstAttribute="height" secondItem="uNj-N0-T2e" secondAttribute="height" id="ebe-4F-uXU"/>
                 <constraint firstItem="gkk-Uf-sqf" firstAttribute="top" secondItem="3iL-G1-hIt" secondAttribute="bottom" constant="20" id="fh4-fd-jzE"/>
                 <constraint firstItem="0cQ-CJ-BWi" firstAttribute="leading" secondItem="bHd-2D-zeg" secondAttribute="trailing" id="iFA-Ug-hUD"/>
+                <constraint firstItem="hCo-1i-CZ5" firstAttribute="centerY" secondItem="fp8-U8-Thg" secondAttribute="centerY" id="iWv-4J-tgD"/>
                 <constraint firstItem="3iL-G1-hIt" firstAttribute="trailing" secondItem="Ysz-tS-Lwr" secondAttribute="trailing" id="l7B-u0-q0x"/>
                 <constraint firstItem="hCo-1i-CZ5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="l80-kR-8CZ"/>
                 <constraint firstItem="she-tk-HEn" firstAttribute="leading" secondItem="yWK-dY-OuE" secondAttribute="leading" id="lDY-MV-Tlr"/>
@@ -261,6 +290,7 @@
                 <outlet property="gst" destination="0cQ-CJ-BWi" id="0aU-bi-t6t"/>
                 <outlet property="lookupButton" destination="aMb-8F-CrW" id="IQf-Yg-nTp"/>
                 <outlet property="postCode" destination="txR-G0-yQn" id="AU1-0U-F4r"/>
+                <outlet property="resetButton" destination="fp8-U8-Thg" id="u7O-GO-PvH"/>
                 <outlet property="segmentControl" destination="hCo-1i-CZ5" id="bTj-Nc-8JX"/>
                 <outlet property="stateCode" destination="aGr-FA-JwF" id="GQn-cs-9Wd"/>
             </connections>

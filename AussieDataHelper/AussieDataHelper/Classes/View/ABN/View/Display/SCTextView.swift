@@ -9,6 +9,11 @@
 import UIKit
 
 class SCTextView: UITextView {
+    override var text: String!{
+        didSet{
+            scrollRangeToVisible(NSMakeRange(0, 0))
+        }
+    }
     override init(frame: CGRect, textContainer: NSTextContainer?) {
         super.init(frame: frame, textContainer: textContainer)
         setupUI()

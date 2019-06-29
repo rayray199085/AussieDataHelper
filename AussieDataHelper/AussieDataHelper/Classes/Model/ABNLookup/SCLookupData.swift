@@ -15,7 +15,7 @@ class SCLookupData: NSObject {
     @objc var AddressDate: String?
     @objc var AddressPostcode: String?
     @objc var AddressState: String?
-    @objc var BusinessName: [NSObject]?
+    @objc var BusinessName: [String]?
     @objc var EntityName: String?
     @objc var EntityTypeCode: String?
     @objc var EntityTypeName: String?

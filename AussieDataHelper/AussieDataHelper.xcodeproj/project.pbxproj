@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D19A38B22C6023D0067CE45 /* SCANZSICData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D19A38A22C6023D0067CE45 /* SCANZSICData.swift */; };
+		0D2690D522C70378005F1EAA /* SCDefinitionDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2690D422C70378005F1EAA /* SCDefinitionDisplayView.swift */; };
+		0D2690D722C70383005F1EAA /* SCDefinitionDisplayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D2690D622C70383005F1EAA /* SCDefinitionDisplayView.xib */; };
+		0D2690D922C70776005F1EAA /* SCDefinitionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2690D822C70776005F1EAA /* SCDefinitionsTableViewCell.swift */; };
+		0D2690DB22C70788005F1EAA /* SCDefinitionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D2690DA22C70788005F1EAA /* SCDefinitionsTableViewCell.xib */; };
+		0D2690DD22C712AC005F1EAA /* SCDefinitionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2690DC22C712AC005F1EAA /* SCDefinitionsViewModel.swift */; };
+		0D2690E022C7164E005F1EAA /* SCDefinitionsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2690DF22C7164E005F1EAA /* SCDefinitionsData.swift */; };
+		0D2690E222C716DB005F1EAA /* SCDefinitionsDataContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2690E122C716DB005F1EAA /* SCDefinitionsDataContent.swift */; };
+		0D2690E422C7171D005F1EAA /* SCDefinitionsContentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2690E322C7171D005F1EAA /* SCDefinitionsContentItem.swift */; };
+		0D2690E622C742E6005F1EAA /* SCDefinitionsMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2690E522C742E6005F1EAA /* SCDefinitionsMaskView.swift */; };
+		0D2690E822C74352005F1EAA /* SCDefinitionsMaskView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D2690E722C74352005F1EAA /* SCDefinitionsMaskView.xib */; };
+		0D43A94322C594810016DCF5 /* SCABNNameSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D43A94222C594810016DCF5 /* SCABNNameSearchView.swift */; };
+		0D43A94522C594920016DCF5 /* SCABNNameSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D43A94422C594920016DCF5 /* SCABNNameSearchView.xib */; };
+		0D43A94822C5A59E0016DCF5 /* SCNameSearchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D43A94722C5A59E0016DCF5 /* SCNameSearchData.swift */; };
+		0D43A94A22C5A5FE0016DCF5 /* SCNameSearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D43A94922C5A5FE0016DCF5 /* SCNameSearchItem.swift */; };
+		0D43A94C22C5A94A0016DCF5 /* SCNameSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D43A94B22C5A94A0016DCF5 /* SCNameSearchTableViewCell.swift */; };
+		0D43A94E22C5A9560016DCF5 /* SCNameSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D43A94D22C5A9560016DCF5 /* SCNameSearchTableViewCell.xib */; };
+		0D43A95022C5F0060016DCF5 /* SCANZSICDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D43A94F22C5F0060016DCF5 /* SCANZSICDisplayView.swift */; };
+		0D43A95222C5F01B0016DCF5 /* SCANZSICDisplayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D43A95122C5F01B0016DCF5 /* SCANZSICDisplayView.xib */; };
+		0D43A95522C5F4400016DCF5 /* SCANZSICTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D43A95422C5F4400016DCF5 /* SCANZSICTableViewCell.swift */; };
+		0D43A95722C5F45F0016DCF5 /* SCANZSICTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D43A95622C5F45F0016DCF5 /* SCANZSICTableViewCell.xib */; };
+		0D43A95922C5FEB90016DCF5 /* SCANZSICViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D43A95822C5FEB90016DCF5 /* SCANZSICViewModel.swift */; };
 		0D56AB7522C2FB89006F60C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D56AB7422C2FB89006F60C6 /* AppDelegate.swift */; };
 		0D56AB7C22C2FB8E006F60C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D56AB7B22C2FB8E006F60C6 /* Assets.xcassets */; };
 		0D56AB7F22C2FB8E006F60C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D56AB7D22C2FB8E006F60C6 /* LaunchScreen.storyboard */; };
@@ -81,6 +103,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D19A38A22C6023D0067CE45 /* SCANZSICData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCANZSICData.swift; sourceTree = "<group>"; };
+		0D2690D422C70378005F1EAA /* SCDefinitionDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDefinitionDisplayView.swift; sourceTree = "<group>"; };
+		0D2690D622C70383005F1EAA /* SCDefinitionDisplayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCDefinitionDisplayView.xib; sourceTree = "<group>"; };
+		0D2690D822C70776005F1EAA /* SCDefinitionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDefinitionsTableViewCell.swift; sourceTree = "<group>"; };
+		0D2690DA22C70788005F1EAA /* SCDefinitionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCDefinitionsTableViewCell.xib; sourceTree = "<group>"; };
+		0D2690DC22C712AC005F1EAA /* SCDefinitionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDefinitionsViewModel.swift; sourceTree = "<group>"; };
+		0D2690DF22C7164E005F1EAA /* SCDefinitionsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDefinitionsData.swift; sourceTree = "<group>"; };
+		0D2690E122C716DB005F1EAA /* SCDefinitionsDataContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDefinitionsDataContent.swift; sourceTree = "<group>"; };
+		0D2690E322C7171D005F1EAA /* SCDefinitionsContentItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDefinitionsContentItem.swift; sourceTree = "<group>"; };
+		0D2690E522C742E6005F1EAA /* SCDefinitionsMaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDefinitionsMaskView.swift; sourceTree = "<group>"; };
+		0D2690E722C74352005F1EAA /* SCDefinitionsMaskView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCDefinitionsMaskView.xib; sourceTree = "<group>"; };
+		0D43A94222C594810016DCF5 /* SCABNNameSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCABNNameSearchView.swift; sourceTree = "<group>"; };
+		0D43A94422C594920016DCF5 /* SCABNNameSearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCABNNameSearchView.xib; sourceTree = "<group>"; };
+		0D43A94722C5A59E0016DCF5 /* SCNameSearchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNameSearchData.swift; sourceTree = "<group>"; };
+		0D43A94922C5A5FE0016DCF5 /* SCNameSearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNameSearchItem.swift; sourceTree = "<group>"; };
+		0D43A94B22C5A94A0016DCF5 /* SCNameSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNameSearchTableViewCell.swift; sourceTree = "<group>"; };
+		0D43A94D22C5A9560016DCF5 /* SCNameSearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCNameSearchTableViewCell.xib; sourceTree = "<group>"; };
+		0D43A94F22C5F0060016DCF5 /* SCANZSICDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCANZSICDisplayView.swift; sourceTree = "<group>"; };
+		0D43A95122C5F01B0016DCF5 /* SCANZSICDisplayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCANZSICDisplayView.xib; sourceTree = "<group>"; };
+		0D43A95422C5F4400016DCF5 /* SCANZSICTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCANZSICTableViewCell.swift; sourceTree = "<group>"; };
+		0D43A95622C5F45F0016DCF5 /* SCANZSICTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCANZSICTableViewCell.xib; sourceTree = "<group>"; };
+		0D43A95822C5FEB90016DCF5 /* SCANZSICViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCANZSICViewModel.swift; sourceTree = "<group>"; };
 		0D56AB7122C2FB89006F60C6 /* AussieDataHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AussieDataHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D56AB7422C2FB89006F60C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D56AB7B22C2FB8E006F60C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -182,6 +226,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D19A38922C602260067CE45 /* ANZSICCode */ = {
+			isa = PBXGroup;
+			children = (
+				0D19A38A22C6023D0067CE45 /* SCANZSICData.swift */,
+			);
+			path = ANZSICCode;
+			sourceTree = "<group>";
+		};
+		0D2690D322C70340005F1EAA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D2690D422C70378005F1EAA /* SCDefinitionDisplayView.swift */,
+				0D2690D622C70383005F1EAA /* SCDefinitionDisplayView.xib */,
+				0D2690D822C70776005F1EAA /* SCDefinitionsTableViewCell.swift */,
+				0D2690DA22C70788005F1EAA /* SCDefinitionsTableViewCell.xib */,
+				0D2690E522C742E6005F1EAA /* SCDefinitionsMaskView.swift */,
+				0D2690E722C74352005F1EAA /* SCDefinitionsMaskView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0D2690DE22C71634005F1EAA /* Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				0D2690DF22C7164E005F1EAA /* SCDefinitionsData.swift */,
+				0D2690E122C716DB005F1EAA /* SCDefinitionsDataContent.swift */,
+				0D2690E322C7171D005F1EAA /* SCDefinitionsContentItem.swift */,
+			);
+			path = Definitions;
+			sourceTree = "<group>";
+		};
+		0D43A94022C5944A0016DCF5 /* Display */ = {
+			isa = PBXGroup;
+			children = (
+				0D56AC1A22C32119006F60C6 /* SCABNDisplayView.swift */,
+				0D56AC1C22C3212C006F60C6 /* SCABNDisplayView.xib */,
+				0D56AC1E22C33D38006F60C6 /* SCTextView.swift */,
+			);
+			path = Display;
+			sourceTree = "<group>";
+		};
+		0D43A94122C594590016DCF5 /* Name */ = {
+			isa = PBXGroup;
+			children = (
+				0D43A94222C594810016DCF5 /* SCABNNameSearchView.swift */,
+				0D43A94422C594920016DCF5 /* SCABNNameSearchView.xib */,
+				0D43A94B22C5A94A0016DCF5 /* SCNameSearchTableViewCell.swift */,
+				0D43A94D22C5A9560016DCF5 /* SCNameSearchTableViewCell.xib */,
+			);
+			path = Name;
+			sourceTree = "<group>";
+		};
+		0D43A94622C5A56E0016DCF5 /* ABNNameSearch */ = {
+			isa = PBXGroup;
+			children = (
+				0D43A94722C5A59E0016DCF5 /* SCNameSearchData.swift */,
+				0D43A94922C5A5FE0016DCF5 /* SCNameSearchItem.swift */,
+			);
+			path = ABNNameSearch;
+			sourceTree = "<group>";
+		};
+		0D43A95322C5F0290016DCF5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D43A95422C5F4400016DCF5 /* SCANZSICTableViewCell.swift */,
+				0D43A95622C5F45F0016DCF5 /* SCANZSICTableViewCell.xib */,
+				0D43A94F22C5F0060016DCF5 /* SCANZSICDisplayView.swift */,
+				0D43A95122C5F01B0016DCF5 /* SCANZSICDisplayView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0D56AB6822C2FB89006F60C6 = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +375,8 @@
 			isa = PBXGroup;
 			children = (
 				0DEB2AA822C34C240088EB1A /* SCABNLookupViewModel.swift */,
+				0D43A95822C5FEB90016DCF5 /* SCANZSICViewModel.swift */,
+				0D2690DC22C712AC005F1EAA /* SCDefinitionsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -279,6 +397,9 @@
 		0D56ABA622C2FC2E006F60C6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0D2690DE22C71634005F1EAA /* Definitions */,
+				0D19A38922C602260067CE45 /* ANZSICCode */,
+				0D43A94622C5A56E0016DCF5 /* ABNNameSearch */,
 				0DEB2AA522C34ADF0088EB1A /* ABNLookup */,
 			);
 			path = Model;
@@ -359,8 +480,8 @@
 		0D56ABD122C2FC62006F60C6 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				0D56ABD222C2FC62006F60C6 /* SCNetworkManager.swift */,
 				0D56ABD322C2FC62006F60C6 /* Model */,
+				0D56ABD222C2FC62006F60C6 /* SCNetworkManager.swift */,
 				0D56ABD522C2FC62006F60C6 /* SCNetworkManager+extension.swift */,
 			);
 			path = Network;
@@ -412,6 +533,7 @@
 		0D56AC0022C2FF54006F60C6 /* ANZSIC */ = {
 			isa = PBXGroup;
 			children = (
+				0D43A95322C5F0290016DCF5 /* View */,
 				0D56AC0F22C304D4006F60C6 /* SCANZSICViewController.swift */,
 			);
 			path = ANZSIC;
@@ -420,6 +542,7 @@
 		0D56AC0122C2FF54006F60C6 /* Definitions */ = {
 			isa = PBXGroup;
 			children = (
+				0D2690D322C70340005F1EAA /* View */,
 				0D56AC1122C304E3006F60C6 /* SCDefinitionsViewController.swift */,
 			);
 			path = Definitions;
@@ -453,9 +576,8 @@
 		0D56AC1922C320F6006F60C6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0D56AC1A22C32119006F60C6 /* SCABNDisplayView.swift */,
-				0D56AC1C22C3212C006F60C6 /* SCABNDisplayView.xib */,
-				0D56AC1E22C33D38006F60C6 /* SCTextView.swift */,
+				0D43A94122C594590016DCF5 /* Name */,
+				0D43A94022C5944A0016DCF5 /* Display */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -593,11 +715,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D56AC0922C2FFD6006F60C6 /* main.json in Resources */,
+				0D43A95722C5F45F0016DCF5 /* SCANZSICTableViewCell.xib in Resources */,
 				0D56AC1D22C3212C006F60C6 /* SCABNDisplayView.xib in Resources */,
 				0D56ABFC22C2FC62006F60C6 /* OPTIBelwe-Medium.otf in Resources */,
+				0D2690DB22C70788005F1EAA /* SCDefinitionsTableViewCell.xib in Resources */,
+				0D43A94522C594920016DCF5 /* SCABNNameSearchView.xib in Resources */,
 				0D56AB7F22C2FB8E006F60C6 /* LaunchScreen.storyboard in Resources */,
 				0D56AB7C22C2FB8E006F60C6 /* Assets.xcassets in Resources */,
+				0D43A94E22C5A9560016DCF5 /* SCNameSearchTableViewCell.xib in Resources */,
+				0D43A95222C5F01B0016DCF5 /* SCANZSICDisplayView.xib in Resources */,
 				0D56ABFD22C2FC62006F60C6 /* JandaManateeBubble.ttf in Resources */,
+				0D2690E822C74352005F1EAA /* SCDefinitionsMaskView.xib in Resources */,
+				0D2690D722C70383005F1EAA /* SCDefinitionDisplayView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,30 +821,40 @@
 				0D56AC1F22C33D38006F60C6 /* SCTextView.swift in Sources */,
 				0D56ABDC22C2FC62006F60C6 /* UIButton+SCAddition.m in Sources */,
 				0D56ABDF22C2FC62006F60C6 /* NSString+SCAddition.m in Sources */,
+				0D43A95022C5F0060016DCF5 /* SCANZSICDisplayView.swift in Sources */,
 				0DEB2AA722C34AFF0088EB1A /* SCLookupData.swift in Sources */,
 				0D56ABF422C2FC62006F60C6 /* UIPageControl+extension.swift in Sources */,
 				0D56ABEA22C2FC62006F60C6 /* UILabel+extension.swift in Sources */,
 				0D56AC0C22C2FFD6006F60C6 /* SCMainViewController.swift in Sources */,
 				0D56ABE822C2FC62006F60C6 /* UIWindow+extension.swift in Sources */,
+				0D43A94822C5A59E0016DCF5 /* SCNameSearchData.swift in Sources */,
+				0D19A38B22C6023D0067CE45 /* SCANZSICData.swift in Sources */,
 				0D56ABE622C2FC62006F60C6 /* NSAttributedString+extension.swift in Sources */,
 				0D56ABDD22C2FC62006F60C6 /* NSObject+SCAddition.m in Sources */,
 				0D56ABE922C2FC62006F60C6 /* Date+extension.swift in Sources */,
 				0D56AC0B22C2FFD6006F60C6 /* SCNavigationViewController.swift in Sources */,
+				0D43A94A22C5A5FE0016DCF5 /* SCNameSearchItem.swift in Sources */,
+				0D2690E222C716DB005F1EAA /* SCDefinitionsDataContent.swift in Sources */,
 				0D56ABFB22C2FC62006F60C6 /* FFLabel.swift in Sources */,
 				0D56ABF522C2FC62006F60C6 /* UIBarButtonItem+extension.swift in Sources */,
 				0D56ABF322C2FC62006F60C6 /* WKWebView+extension.swift in Sources */,
 				0D56ABE722C2FC62006F60C6 /* UIFont+extension.swift in Sources */,
 				0D56ABF122C2FC62006F60C6 /* String+extension.swift in Sources */,
+				0D2690DD22C712AC005F1EAA /* SCDefinitionsViewModel.swift in Sources */,
 				0D56ABE222C2FC62006F60C6 /* UILabel+SCAddition.m in Sources */,
 				0D56ABFA22C2FC62006F60C6 /* SCNetworkManager+extension.swift in Sources */,
 				0D56ABE122C2FC62006F60C6 /* CABasicAnimation+SCAddition.m in Sources */,
 				0D56AC1622C3050C006F60C6 /* SCMoreViewController.swift in Sources */,
+				0D2690E422C7171D005F1EAA /* SCDefinitionsContentItem.swift in Sources */,
 				0D56ABF022C2FC62006F60C6 /* UIViewController+extension.swift in Sources */,
 				0D56AC1422C304FF006F60C6 /* SCBrandingViewController.swift in Sources */,
 				0D56ABEE22C2FC62006F60C6 /* Bundle+extension.swift in Sources */,
+				0D2690E022C7164E005F1EAA /* SCDefinitionsData.swift in Sources */,
+				0D2690D522C70378005F1EAA /* SCDefinitionDisplayView.swift in Sources */,
 				0D56AC1822C30B2F006F60C6 /* HelperCommon.swift in Sources */,
 				0D56AC1B22C32119006F60C6 /* SCABNDisplayView.swift in Sources */,
 				0D56ABF922C2FC62006F60C6 /* SCUserAccount.swift in Sources */,
+				0D43A95522C5F4400016DCF5 /* SCANZSICTableViewCell.swift in Sources */,
 				0D56ABE422C2FC62006F60C6 /* UIApplication+extension.swift in Sources */,
 				0D56AC1022C304D4006F60C6 /* SCANZSICViewController.swift in Sources */,
 				0D56AC1222C304E3006F60C6 /* SCDefinitionsViewController.swift in Sources */,
@@ -723,15 +862,20 @@
 				0D56AC0E22C304BE006F60C6 /* SCABNViewController.swift in Sources */,
 				0D56ABEF22C2FC62006F60C6 /* UITabBarController+extension.swift in Sources */,
 				0D56ABE322C2FC62006F60C6 /* UIColor+SCAddition.m in Sources */,
+				0D2690D922C70776005F1EAA /* SCDefinitionsTableViewCell.swift in Sources */,
 				0D56ABEB22C2FC62006F60C6 /* UIView+extension.swift in Sources */,
 				0D56ABDE22C2FC62006F60C6 /* UIImageView+SCAddition.m in Sources */,
+				0D43A95922C5FEB90016DCF5 /* SCANZSICViewModel.swift in Sources */,
 				0D56ABEC22C2FC62006F60C6 /* UIImage+extension.swift in Sources */,
 				0D56ABF222C2FC62006F60C6 /* UITableViewCell+extension.swift in Sources */,
 				0D56ABF622C2FC62006F60C6 /* UITableView+extension.swift in Sources */,
 				0D56ABF822C2FC62006F60C6 /* SCNetworkManager.swift in Sources */,
+				0D43A94C22C5A94A0016DCF5 /* SCNameSearchTableViewCell.swift in Sources */,
 				0D56ABE022C2FC62006F60C6 /* UIScreen+UISCreen_extenshion.m in Sources */,
 				0D56ABE522C2FC62006F60C6 /* UIImageView+extension.swift in Sources */,
+				0D2690E622C742E6005F1EAA /* SCDefinitionsMaskView.swift in Sources */,
 				0D56AB7522C2FB89006F60C6 /* AppDelegate.swift in Sources */,
+				0D43A94322C594810016DCF5 /* SCABNNameSearchView.swift in Sources */,
 				0D56ABF722C2FC62006F60C6 /* MXCornerRadius.m in Sources */,
 				0DEB2AA922C34C240088EB1A /* SCABNLookupViewModel.swift in Sources */,
 			);

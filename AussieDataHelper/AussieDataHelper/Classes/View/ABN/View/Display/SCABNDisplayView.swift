@@ -8,10 +8,14 @@
 
 import UIKit
 import SVProgressHUD
-
+protocol SCABNDisplayViewDelegate: NSObjectProtocol {
+    func didClickSegmentControl(view: SCABNDisplayView, index: Int)
+}
 class SCABNDisplayView: UIView {
     var viewModel: SCABNLookupViewModel?
+    weak var delegate: SCABNDisplayViewDelegate?
         
+    @IBOutlet weak var resetButton: UIButton!
     @IBOutlet weak var abnTextField: UITextField!
     
     @IBOutlet weak var entityName: SCTextView!
@@ -29,8 +33,10 @@ class SCABNDisplayView: UIView {
     
     @IBOutlet weak var abnLabel: UILabel!
     @IBOutlet weak var segmentControl: UISegmentedControl!
+    
     @IBAction func segmentControlValueChange(_ sender: Any) {
         abnLabel.text = segmentControl.selectedSegmentIndex == 0 ? "ABN:" : "ACN:"
+        delegate?.didClickSegmentControl(view: self, index: segmentControl.selectedSegmentIndex)
     }
     @IBOutlet weak var lookupButton: UIButton!
     
@@ -43,31 +49,55 @@ class SCABNDisplayView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         setupUI()
-        abnTextField.returnKeyType = .search
         abnTextField.delegate = self
     }
     
     @IBAction func clickLookupButton(_ sender: Any) {
         abnTextField.resignFirstResponder()
         if !abnTextField.hasText{
+            SVProgressHUD.showInfo(withStatus: "ABN or ACN cannot be empty.")
             return
         }
         let type: SCLookupType = segmentControl.selectedSegmentIndex == 0 ? .ABN : .ACN
         guard let code = abnTextField.text else{
             return
         }
-       
+        if code == viewModel?.lookupData?.Abn{
+            return 
+        }
         SVProgressHUD.show()
         viewModel?.loadABNData(type: type, code: code, completion: { [weak self](isSuccess) in
+            if self?.viewModel?.lookupData?.Message != ""{
+                SVProgressHUD.showInfo(withStatus: self?.viewModel?.lookupData?.Message)
+                return
+            }
             self?.setupContent()
             SVProgressHUD.dismiss()
         })
     }
     
+    @IBAction func clickResetButton(_ sender: Any) {
+        entityName.text.removeAll()
+        abnStatus.text.removeAll()
+        entityType.text.removeAll()
+        entityTypeCode.text.removeAll()
+        gst.text.removeAll()
+        stateCode.text.removeAll()
+        postCode.text.removeAll()
+        addressDate.text.removeAll()
+        abnTextField.text?.removeAll()
+        businessNames.text.removeAll()
+        firstBusinessName.text.removeAll()
+        abnTextField.resignFirstResponder()
+        
+    }
+    
 }
 private extension SCABNDisplayView{
     func setupUI(){
+        abnTextField.keyboardType = .numberPad
         lookupButton.layer.borderColor = UIColor.lightGray.cgColor
+        resetButton.layer.borderColor = UIColor.lightGray.cgColor
     }
     func setupContent(){
         entityName.text = viewModel?.lookupData?.EntityName
@@ -78,11 +108,17 @@ private extension SCABNDisplayView{
         stateCode.text = viewModel?.lookupData?.AddressState
         postCode.text = viewModel?.lookupData?.AddressPostcode
         addressDate.text = viewModel?.lookupData?.AddressDate
-        
+        var businessNamesText = ""
+        for name in viewModel?.lookupData?.BusinessName ?? []{
+            businessNamesText += name + "\n"
+        }
+        businessNames.text = businessNamesText
+        firstBusinessName.text = viewModel?.lookupData?.BusinessName?.first
     }
 }
 extension SCABNDisplayView: UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        clickLookupButton(lookupButton as Any)
         abnTextField.resignFirstResponder()
         return false
     }
