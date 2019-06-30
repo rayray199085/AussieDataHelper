@@ -10,11 +10,8 @@ pod "SDWebImage"
 pod "Alamofire"
 pod "AlamofireNetworkActivityIndicator"
 pod "pop"
-pod "DropDown"
 pod "SVProgressHUD"
-pod "Atributika"
 pod "YYModel"
-pod 'AAInfographics', :git => 'https://github.com/AAChartModel/AAChartKit-Swift.git'
 pod 'MLeaksFinder'
 
 end

@@ -14,6 +14,7 @@ class SCANZSICData: NSObject {
     @objc var unparsedText: String?
     @objc var score: Double = 0
     @objc var rank: Int = 0
+    var height: CGFloat = 0
     
     override var description: String{
         return yy_modelDescription()

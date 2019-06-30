@@ -72,7 +72,6 @@ private extension SCABNNameSearchView{
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "SCNameSearchTableViewCell", bundle: nil), forCellReuseIdentifier: reuseIdentifier)
-        tableView.rowHeight = 190
         tableView.separatorColor = UIColor.darkGray
         tableView.layer.borderColor = HelperCommon.frameColor
     }
@@ -97,7 +96,8 @@ extension SCABNNameSearchView: UITableViewDelegate, UITableViewDataSource{
         cell.setTextViewScrollToTop()
         return cell
     }
-    
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return viewModel?.nameSearchData?.Names?[indexPath.row].height ?? 166
+    }
 }
 

@@ -17,4 +17,5 @@ class SCNameSearchItem: NSObject {
     @objc var Postcode: String?
     @objc var Score: Int = 0
     @objc var State: String?
+    var height: CGFloat = 0
 }

@@ -42,7 +42,6 @@ private extension SCANZSICDisplayView{
         tableView.delegate = self
         tableView.dataSource = self
         
-        tableView.rowHeight = 90
         tableView.register(UINib(nibName: "SCANZSICTableViewCell", bundle: nil), forCellReuseIdentifier: reuseIdentifier)
     }
 }
@@ -63,5 +62,8 @@ extension SCANZSICDisplayView: UITableViewDataSource, UITableViewDelegate{
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! SCANZSICTableViewCell
         cell.anzsicCode = viewModel?.anzsicCodeArray?[indexPath.row]
         return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return viewModel?.anzsicCodeArray?[indexPath.row].height ?? 105
     }
 }

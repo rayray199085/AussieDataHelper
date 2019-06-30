@@ -27,9 +27,27 @@ class SCANZSICViewModel{
                 completion(false)
                 return
             }
+            for data in group{
+                guard let text = data.unparsedText else{
+                    continue
+                }
+                data.height = self.updateRowHeight(name: text)
+            }
             self.anzsicCodeArray = group
             self.prevKeywords = keywords
             completion(true)
         }
+    }
+    func updateRowHeight(name: String)->CGFloat{
+        let margin: CGFloat = 3
+        let labelHeight: CGFloat = 17
+        var height = (margin + labelHeight) * 3
+        let viewSize = CGSize(width: UIScreen.main.bounds.width - 2 * margin, height: CGFloat(MAXFLOAT))
+        height += margin
+        height += NSAttributedString(string: name, attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 14)])
+            .boundingRect(with: viewSize, options: [.usesLineFragmentOrigin], context: nil)
+            .height
+        height += margin * 3
+        return height
     }
 }

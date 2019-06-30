@@ -1,2 +1,2 @@
-[{"imageName":"abn","title":"ABN","clsName":"SCABNViewController"},{"clsName":"SCANZSICViewController","title":"ANZSIC","imageName":"anzsic"},{"title":"Definitions","clsName":"SCDefinitionsViewController","imageName":"definitions"},{"clsName":"SCBrandingViewController","title":"Branding","imageName":"branding"},
+[{"imageName":"abn","title":"ABN","clsName":"SCABNViewController"},{"clsName":"SCANZSICViewController","title":"ANZSIC","imageName":"anzsic"},{"title":"Definitions","clsName":"SCDefinitionsViewController","imageName":"definitions"},{"clsName":"SCAreaCodesViewController","title":"Area codes","imageName":"telephone"},
     {"clsName":"SCMoreViewController","title":"More","imageName":"more"}]

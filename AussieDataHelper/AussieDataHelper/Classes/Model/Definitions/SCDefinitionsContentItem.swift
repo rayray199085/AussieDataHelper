@@ -16,7 +16,6 @@ class SCDefinitionsContentItem: NSObject {
     @objc var usage: [String]?
     @objc var type: String?
     
-    
     override var description: String{
         return yy_modelDescription()
     }

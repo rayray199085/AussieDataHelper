@@ -45,14 +45,35 @@ class SCABNLookupViewModel: NSObject {
                     completion(false)
                     return
             }
-            self.nameSearchData = data
             self.prevSearchName = name
             self.prevSearchNameMaxCount = maxResultCount
+            for nameItem in data.Names ?? []{
+                guard let name = nameItem.Name else{
+                    continue
+                }
+                nameItem.height = self.updateRowHeight(name: name)
+            }
+            self.nameSearchData = data
             completion(isSuccess)
         }
     }
     func resetPrevSearchRecord(){
         prevSearchName?.removeAll()
         prevSearchNameMaxCount = 10
+    }
+    
+    func updateRowHeight(name: String)->CGFloat{
+        print(name)
+        let margin: CGFloat = 3
+        let labelWidth: CGFloat = 90
+        let labelHeight: CGFloat = 17
+        var height = (margin + labelHeight) * 7
+        let viewSize = CGSize(width: UIScreen.main.bounds.width - 2 * margin - labelWidth, height: CGFloat(MAXFLOAT))
+        height += margin
+        height += NSAttributedString(string: name, attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 14)])
+            .boundingRect(with: viewSize, options: [.usesLineFragmentOrigin], context: nil)
+            .height
+        height += margin * 4
+        return height
     }
 }

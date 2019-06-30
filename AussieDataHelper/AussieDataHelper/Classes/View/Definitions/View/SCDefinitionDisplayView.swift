@@ -34,9 +34,11 @@ class SCDefinitionDisplayView: UIView {
         textField.delegate = self
         textField.returnKeyType = .search
         
+        tableView.estimatedRowHeight = 140
+        tableView.rowHeight = UITableView.automaticDimension
+        
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.rowHeight = 140
         tableView.register(UINib(nibName: "SCDefinitionsTableViewCell", bundle: nil), forCellReuseIdentifier: reuseIdentifier)
     }
     
