@@ -15,7 +15,7 @@ enum SCLookupType {
     case ACN
 }
 extension SCNetworkManager{
-    func getABNData(type: SCLookupType, lookupCode: String, completion: @escaping (_ dict: [String: Any]?,_ isSuccess: Bool)->()){
+    func getABNData(type: SCLookupType, lookupCode: String, completion: @escaping (_ data: Data?,_ isSuccess: Bool)->()){
         var urlString: String
         var params = [String: Any]()
         if type == .ABN{
@@ -27,7 +27,7 @@ extension SCNetworkManager{
         }
         params["callback"] = "callback"
         params["guid"] = HelperCommon.ABNGUID
-        requestForResponseString(urlString: urlString, method: HTTPMethod.get, params: params) { (res, isSuccess, _, _) in
+        requestForResponseString(urlString: urlString, method: HTTPMethod.get, params: params) { (data, res, isSuccess, _, _) in
             guard var res = res as? String else{
                 completion(nil, false)
                 return
@@ -36,12 +36,11 @@ extension SCNetworkManager{
                 res.removeFirst("callback(".count)
                 res.removeLast()
             }
-            guard let data = res.data(using: String.Encoding.utf8),
-                let dict = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else{
+            guard let data = res.data(using: String.Encoding.utf8) else{
                     completion(nil, false)
                 return
             }
-            completion(dict, isSuccess)
+            completion(data, isSuccess)
         }
     }
     func getNameSearchResult(name: String, maxCount: Int, completion:@escaping (_ dict: [String: Any]?, _ isSuccess: Bool)->()){
@@ -51,7 +50,7 @@ extension SCNetworkManager{
         params["maxResults"] = maxCount
         params["callback"] = "callback"
         params["guid"] = HelperCommon.ABNGUID
-        requestForResponseString(urlString: urlString, method: HTTPMethod.get, params: params) { (res, isSuccess, _, _) in
+        requestForResponseString(urlString: urlString, method: HTTPMethod.get, params: params) { (data, res, isSuccess, _, _) in
             guard var res = res as? String else{
                 completion(nil, false)
                 return
@@ -73,7 +72,7 @@ extension SCNetworkManager{
     func getANZSICSearchResult(keywords: String, completion:@escaping (_ array: [[String: Any]]?,_ isSuccess: Bool)->()){
         let urlString = "https://industrycoder.abs.gov.au/pocc"
         let params = ["s": keywords]
-        request(urlString: urlString, method: HTTPMethod.get, params: params) { (res, isSuccess, _, _) in
+        request(urlString: urlString, method: HTTPMethod.get, params: params) { (data, res, isSuccess, _, _) in
             let array = res as? [[String: Any]]
             completion(array, isSuccess)
         }
@@ -83,7 +82,7 @@ extension SCNetworkManager{
     func getDefinitionsData(keywords: String, currentPage: Int, completion:@escaping (_ dict: [String: Any]?,_ isSuccess: Bool)->()){
         let urlString = "https://api.gov.au/definitions/api/search"
         let params = ["query": keywords, "page": "\(currentPage)", "size": "20"]
-        request(urlString: urlString, method: HTTPMethod.get, params: params) { (res, isSuccess, _, _) in
+        request(urlString: urlString, method: HTTPMethod.get, params: params) { (data,res, isSuccess, _, _) in
             let dict = res as? [String: Any]
             completion(dict, isSuccess)
         }

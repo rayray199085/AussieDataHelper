@@ -16,17 +16,18 @@ class SCABNLookupViewModel: NSObject {
     var prevSearchNameMaxCount: Int = 10
     
     func loadABNData(type: SCLookupType, code: String ,completion: @escaping (_ isSuccess: Bool)->()){
-        SCNetworkManager.shared.getABNData(type: type, lookupCode: code) { (dict, isSuccess) in
+        SCNetworkManager.shared.getABNData(type: type, lookupCode: code) { (data, isSuccess) in
             if !isSuccess{
                 completion(false)
                 return
             }
-            guard let dict = dict,
-                  let data = SCLookupData.yy_model(with: dict) else{
+            guard let data = data,
+                  let lookupData = try? JSONDecoder().decode(SCLookupData.self, from: data) else{
                 completion(false)
                 return
             }
-            self.lookupData = data
+            
+            self.lookupData = lookupData
             completion(isSuccess)
         }
     }

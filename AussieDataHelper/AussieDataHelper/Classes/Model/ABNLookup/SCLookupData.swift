@@ -8,21 +8,16 @@
 
 import UIKit
 
-class SCLookupData: NSObject {
-
-    @objc var Abn: String?
-    @objc var AbnStatus: String?
-    @objc var AddressDate: String?
-    @objc var AddressPostcode: String?
-    @objc var AddressState: String?
-    @objc var BusinessName: [String]?
-    @objc var EntityName: String?
-    @objc var EntityTypeCode: String?
-    @objc var EntityTypeName: String?
-    @objc var Gst: String?
-    @objc var Message: String?
-    
-    override var description: String{
-        return yy_modelDescription()
-    }
+struct SCLookupData: Decodable {
+    var Abn: String?
+    var AbnStatus: String?
+    var AddressDate: String?
+    var AddressPostcode: String?
+    var AddressState: String?
+    var BusinessName: [String]?
+    var EntityName: String?
+    var EntityTypeCode: String?
+    var EntityTypeName: String?
+    var Gst: String?
+    var Message: String?
 }

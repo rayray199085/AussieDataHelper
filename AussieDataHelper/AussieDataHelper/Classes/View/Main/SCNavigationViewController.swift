@@ -18,9 +18,6 @@ class SCNavigationViewController: UINavigationController {
         super.viewWillAppear(animated)
         self.setNeedsStatusBarAppearanceUpdate()
     }
-    override var preferredStatusBarStyle : UIStatusBarStyle {
-        return .lightContent
-    }
     
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if children.count > 0{
